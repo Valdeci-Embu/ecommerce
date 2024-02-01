@@ -39,9 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
     # Remover debug toolbar no final
-    'debug_toolbar,'
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -125,8 +124,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'templates/static')
+STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join('templates/static')
 ]
@@ -155,6 +154,8 @@ SESSION_SAVE_EVERY_REQUEST = False
 # Para sessions em arquivos ao invés da base de dados
 # SESSION_ENGINE = "django.contrib.sessions.backends.file"
 # SESSION_FILE_PATH = '/home/luizotavio/Desktop/temp'
+
+# Remover debug toolbar
 
 INTERNAL_IPS = [
     '127.0.0.1',
